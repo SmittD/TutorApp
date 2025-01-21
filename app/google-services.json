@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "654474919812",
+    "firebase_url": "https://app-tutor-smittd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "app-tutor-smittd",
+    "storage_bucket": "app-tutor-smittd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654474919812:android:e2bf47d3905cf87ca0a7d1",
+        "android_client_info": {
+          "package_name": "com.smittd.tutorapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV3qeO-A6usZaJ9wCLwDYQXmB7c1R_YPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
