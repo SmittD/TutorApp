@@ -1,5 +1,6 @@
 package com.smittd.tutorapp.ui.theme
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -29,7 +30,7 @@ private val DarkColors = darkColorScheme(
 
 @Composable
 fun TutorAppTheme(
-    useDarkTheme: Boolean = false, // lub odczyt z systemu
+    useDarkTheme: Boolean = isSystemInDarkTheme(), // domyślnie odczytuje ustawienia systemowe
     content: @Composable () -> Unit
 ) {
     MaterialTheme(

@@ -25,8 +25,6 @@ fun HomeScreen(navController: NavController) {
     var userRole by remember { mutableStateOf("") }
     var roleError by remember { mutableStateOf("") }
 
-    // Gdy user tutaj trafi, z SplashScreen wiemy, że to nie admin.
-    // Ale możemy jeszcze raz pobrać w RTDB rolę -> "student"/"teacher".
     LaunchedEffect(Unit) {
         val uid = auth.currentUser?.uid
         if (uid != null) {
@@ -106,19 +104,19 @@ fun BottomNavBar(
             selected = selectedTab == HomeTab.HOME,
             onClick = { onSelectTab(HomeTab.HOME) },
             label = { Text("Home") },
-            icon = { /* Ikonka, jeśli chcesz */ }
+            icon = { }
         )
         NavigationBarItem(
             selected = selectedTab == HomeTab.MATERIALS,
             onClick = { onSelectTab(HomeTab.MATERIALS) },
             label = { Text("Materiały") },
-            icon = { /* Ikonka */ }
+            icon = { }
         )
         NavigationBarItem(
             selected = selectedTab == HomeTab.MESSAGES,
             onClick = { onSelectTab(HomeTab.MESSAGES) },
             label = { Text("Wiadomości") },
-            icon = { /* Ikonka */ }
+            icon = { }
         )
     }
 }
@@ -175,7 +173,7 @@ fun CalendarPlaceholder() {
     Card(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text("Kalendarz - bieżący miesiąc")
-            Text("Tutaj zostaną wyświetlione faktyczna siatka dni itp.")
+            Text("Tutaj zostanie wyświetliona siatka dni itp.")
         }
     }
 }
